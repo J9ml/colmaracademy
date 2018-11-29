@@ -1,0 +1,261 @@
+
+html {
+  font-size: 16px;
+  font-family: 'Sunflower', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+}
+
+.container {
+  border: 1px grey;
+}
+/* nav bar */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+  min-width: 100%;
+  padding-right: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-container img {
+  margin-left: 24px;
+  height: 2rem;
+  padding-right: 0.5rem;
+}
+
+header span {
+  font-size: 1.5rem;
+}
+
+#academy {
+  font-weight: 300;
+}
+
+
+header ul li {
+  display: inline-block;
+  justify-content: flex-end;
+  font-size: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* banner */
+
+.banner {
+  background-color: #dcdcdc;
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  max-width: 60%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  max-width: 40%;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.banner h1:nth-child(2) {
+  padding-bottom: 1rem;
+}
+
+.banner p {
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  max-width: 90%;
+
+}
+
+.banner .button {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #808080;
+  color: white;
+  padding: 0.5rem;
+  max-width: 70%;
+}
+
+/* information section */
+
+.information {
+  display: flex;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  border-right: 1pt solid #dcdcdc;
+}
+
+.main img {
+  max-width: 100%;
+}
+
+.information h2 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.main p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  max-width: 90%;
+}
+
+.secondary {
+  max-width: 40%;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.secondary img {
+  max-width: 35%;
+  padding-right: 1rem;
+}
+
+
+.secondary p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.orientation, .campus, .lecture {
+  display: flex;
+  align-items: center;
+}
+
+.orientation {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.campus {
+  border-top: 1pt solid #dcdcdc;
+  padding: 1rem;
+}
+
+.lecture {
+ background-color: #dcdcdc;
+ padding: 1rem;
+}
+
+.campus span, .lecture span {
+color: #1e90ff;
+}
+
+
+.secondary img {
+  max-width: 35%;
+  padding-right: 1rem;
+}
+
+}
+.info-text {
+  max-width: 65%;
+  padding-right: 1rem;
+}
+
+/* start learning */
+
+.learning {
+  background-color: #dcdcdc;
+
+}
+
+.learning h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  padding: 0 3rem 2rem 4.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  max-width: 30%;
+  margin-bottom: 1.5rem;
+}
+
+.field img {
+
+}
+
+.field h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.field img {
+}
+
+.field-text {
+  padding: 1rem;
+}
+
+
+
+
+
+/* thesis */
+
+/* footr */
