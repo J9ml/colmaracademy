@@ -129,6 +129,7 @@ header ul li {
   max-width: 60%;
   padding: 2rem 1.5rem 2rem 1.5rem;
   border-right: 1pt solid #dcdcdc;
+  flex: 1 1;
 }
 
 .main img {
@@ -154,6 +155,8 @@ header ul li {
   flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  flex: 1 1;
+
 }
 
 .secondary img {
@@ -208,7 +211,6 @@ color: #1e90ff;
 
 .learning {
   background-color: #dcdcdc;
-
 }
 
 .learning h2 {
@@ -229,11 +231,12 @@ color: #1e90ff;
 .field {
   background-color: #ffffff;
   width: 30%;
-  margin: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .field img {
 align-self: center;
+max-width: 100%;
 }
 
 .field-text {
@@ -245,19 +248,86 @@ align-self: center;
   padding-bottom: 1rem;
 }
 
-.field img {
-}
 
-.field span {
+.field-text span {
   font-weight: 300;
 }
 
-
-
-
-
-
+.field-text p {
+  padding-top: 1rem;
+}
 
 /* thesis */
 
-/* footr */
+.thesis h2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.exhibit-container {
+  display: flex;
+  padding: 0 0 2rem 1.5rem;
+}
+
+.exhibita {
+  max-width: 60%;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5rem;
+  justify-content: flex-start;
+}
+
+.exhibita img {
+  padding-bottom: 1.5rem;
+}
+
+.exhibita h3 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.exhibitb {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: flex-start;
+
+}
+
+.exhibitb img {
+  max-width: 35%;
+  padding-right: 1rem;
+  align-self: flex-start;
+}
+
+.prototype {
+  background-color: #dcdcdc;
+  display: flex;
+  padding: 1rem;
+
+}
+
+.nowandthen {
+  display: flex;
+  padding: 1rem;
+}
+
+.exhibit-text {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* footer */
+
+footer {
+  border-top: 1pt solid #dcdcdc;
+  display: block;
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
