@@ -227,20 +227,20 @@ color: #1e90ff;
 }
 
 .field {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1;
-  justify-content: flex-start;
   background-color: #ffffff;
-  max-width: 30%;
-  margin-bottom: 1.5rem;
+  width: 30%;
+  margin: 1.5rem;
 }
 
 .field img {
-
+align-self: center;
 }
 
-.field h1 {
+.field-text {
+  padding: 1rem;
+}
+
+.field h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -248,9 +248,11 @@ color: #1e90ff;
 .field img {
 }
 
-.field-text {
-  padding: 1rem;
+.field span {
+  font-weight: 300;
 }
+
+
 
 
 
