@@ -18,7 +18,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 p {
@@ -89,8 +89,6 @@ header span {
 }
 
 
-
-
 @media only screen and (max-width: 450px) {
 
 .logo, .desktop-menu {
@@ -103,8 +101,6 @@ header span {
   align-items: center;
   width: 100%;
 }
-
-
 
 }
 
@@ -181,6 +177,37 @@ header span {
   .banner {
     display: flex;
     flex-direction: column;
+    padding: 0;
+  }
+
+  .banner img {
+    max-width: 100%;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    max-width: 90%;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+  }
+
+  .banner .button {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #55bcc9;
+    padding: 0.5rem;
+    max-width: 90%;
+    border-radius: 0.2rem;
   }
 
   }
