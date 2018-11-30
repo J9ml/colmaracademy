@@ -73,6 +73,14 @@ header ul li {
   font-size: 1rem;
   padding-right: 1rem;
   align-items: center;
+  transition: size 1s ease-out 0.05s;
+}
+
+header ul li:hover {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
 }
 
 .mobile-menu {
@@ -132,6 +140,8 @@ header ul li {
   background-color: #55bcc9;
   padding: 0.5rem;
   max-width: 80%;
+  border-radius: 0.2rem;
+
 }
 
 .banner span {
@@ -194,7 +204,11 @@ header ul li {
   padding-top: 2rem;
   padding-bottom: 2rem;
   flex: 1 1;
+  transition: color 0.5s ease-in 0.1s;
+}
 
+.secondary div:hover  {
+ background-color: #55bcc9;
 }
 
 .secondary img {
@@ -213,7 +227,6 @@ header ul li {
 .orientation, .campus, .lecture {
   display: flex;
   align-items: center;
-
 }
 
 .orientation {
@@ -276,7 +289,12 @@ border-radius: 0.1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+  transition: all 0.1s linear;
+}
 
+.learning h2:hover {
+ color: #55bcc9;
+ background-color: #000000;
 }
 
 .courses {
@@ -288,19 +306,28 @@ border-radius: 0.1rem;
   padding: 0 3rem 2rem 4.5rem;
 }
 
+
 .field {
   background-color: #ffffff;
   width: 30%;
   margin-bottom: 2rem;
+  transition: all 1s ease-in-out 2s;
 }
-.field:hover {
-  transition: all 1s ease-out 2s;
+
+.field-text h3:hover {
+ color: #55bcc9;
+}
+
+.field img:hover {
+  max-width: 105%;
 }
 
 .field img {
 align-self: center;
 max-width: 100%;
 }
+
+
 
 .field-text {
   padding: 1rem;
@@ -319,20 +346,8 @@ max-width: 100%;
   padding-top: 0.5rem;
 }
 
-.field img, .field div, .field h3, .field span, .field p {
-  transition: size 0.5s ease-out 0.05s;
-}
 
-.field div:hover, .field img:hover, .field div:hover, .field-text h3:hover, .field-text span:hover, .field-text p:hover {
-  font-size: 110%;
-  line-height: 110%;
-  max-width: 110%%;
-  max-height: 110%;
-}
 
-.field-text div:hover {
-background-color: #55bcc9;
-}
 
 /* thesis */
 
@@ -340,6 +355,12 @@ background-color: #55bcc9;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  transition: all 0.1s linear;
+}
+
+.thesis h2:hover {
+color: #55bcc9;
+background-color: #000000;
 }
 
 .exhibit-container {
@@ -372,7 +393,11 @@ background-color: #55bcc9;
   padding-top: 0;
   padding-bottom: 0;
   justify-content: flex-start;
+  transition: color 0.5s ease-in 0.1s;
+}
 
+.exhibitb div:hover  {
+background-color: #55bcc9;
 }
 
 .exhibitb img {
@@ -385,11 +410,13 @@ background-color: #55bcc9;
   background-color: #55bcc9;
   display: flex;
   padding: 1rem;
+  margin-top: 0.5rem;
 }
 
 .nowandthen {
   display: flex;
   padding: 1rem;
+  border: 1pt solid #c2cad0;
 
 }
 
