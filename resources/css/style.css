@@ -1,6 +1,4 @@
 
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
-
 html {
   font-size: 16px;
   font-family: 'Sunflower', sans-serif;
@@ -40,9 +38,8 @@ p {
   position: fixed;
   display: flex;
   align-items: center;
-  min-height: 4rem;
+  height: 4rem;
   min-width: 100%;
-  padding-right: 0.5rem;
   background-color: #55bcc9;
 }
 
@@ -52,7 +49,7 @@ p {
   flex-grow: 1;
 }
 
-.header-container img {
+.logo img {
   margin-left: 24px;
   height: 2rem;
   padding-right: 0.5rem;
@@ -66,30 +63,55 @@ header span {
   font-weight: 300;
 }
 
-
-header ul li {
+.desktop-menu ul li {
   display: inline-block;
-  justify-content: flex-end;
   font-size: 1rem;
   padding-right: 1rem;
-  align-items: center;
-  transition: size 1s ease-out 0.05s;
+  transition: all 0.5s ease-out 0.05s;
 }
 
-header ul li:hover {
+.desktop-menu ul li:nth-child(4) {
+  margin-right: 0.5rem;
+}
+
+.desktop-menu ul li:hover {
   background-color: #ffffff;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-radius: 0.2rem;
 }
 
-.mobile-menu {
+.header-container .mobile-menu {
   display: none;
 }
 
-@media only screen and (max-width: 0px) {
+@media only screen and (max-width: 760px) {
 
-  }
+
+}
+
+
+
+@media only screen and (max-width: 450px) {
+
+.logo, .desktop-menu {
+   display: none;
+}
+
+.mobile-menu {
+    display: flex;
+    width: 100%;
+}
+
+.mobile-menu ul li {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+}
+
 
 /* banner */
 
@@ -158,7 +180,12 @@ header ul li:hover {
 
 
 
-@media only screen and (max-width: 0px) {
+@media only screen and (max-width: 450px) {
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
 
   }
 
@@ -274,7 +301,11 @@ border-radius: 0.1rem;
   padding-right: 1rem;
 }
 
-@media only screen and (max-width: 0px) {
+@media only screen and (max-width: 450px) {
+
+
+}
+
 
   }
 
@@ -431,7 +462,7 @@ background-color: #55bcc9;
   padding-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 0px) {
+@media only screen and (max-width: 450px) {
 
   }
 
@@ -447,6 +478,6 @@ footer {
   height: 2rem;
 }
 
-@media only screen and (max-width: 0px) {
+@media only screen and (max-width: 450px) {
 
   }
