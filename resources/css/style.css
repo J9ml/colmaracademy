@@ -82,26 +82,26 @@ header span {
 
 @media only screen and (max-width: 1920px) {
 
-.mobile-menu {
-    display: none;
+  .mobile-menu {
+  display: none;
   }
-
 }
+
+
 
 
 @media only screen and (max-width: 450px) {
 
-.logo, .desktop-menu {
-   display: none;
-}
+  .logo, .desktop-menu {
+  display: none;
+  }
 
-.mobile-menu {
+  .mobile-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-}
-
+  }
 }
 
 
@@ -137,14 +137,13 @@ header span {
   color: #55bcc9;
 }
 
-
 .banner p {
   color: #ffffff;
   padding-bottom: 2rem;
   font-size: 1.4rem;
+  line-height: 1.7rem;
   font-weight: 300;
   max-width: 90%;
-
 }
 
 .banner .button {
@@ -155,7 +154,6 @@ header span {
   padding: 0.5rem;
   max-width: 80%;
   border-radius: 0.2rem;
-
 }
 
 .banner span {
@@ -171,55 +169,56 @@ header span {
 }
 
 
+@media only screen and (max-width: 448px) {
 
-@media only screen and (max-width: 450px) {
+   .banner {
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   }
 
-  .banner {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .banner img {
-    max-width: 100%;
-    padding-top: 0;
-    padding-bottom: 1rem;
-  }
+   .banner img {
+   max-width: 100%;
+   padding-top: 0;
+   padding-bottom: 1rem;
+   }
 
   .banner-text {
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
-    max-width: 90%;
-  }
+    max-width: 100%;
+    }
 
-  .banner h1 {
-    font-size: 2.5rem;
-    letter-spacing: -0.1rem;
-    padding-bottom: 1rem;
-    padding-right: 1.5rem;
-  }
+   .banner h1 {
+   font-size: 2.5rem;
+   letter-spacing: -0.1rem;
+   padding-bottom: 1rem;
+   padding-right: 1.5rem;
+   }
 
-  .banner .button {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 700;
-    background-color: #55bcc9;
-    padding: 0.5rem;
-    max-width: 90%;
-    border-radius: 0.2rem;
-  }
+   .banner p {
+   display: flex;
+   padding-bottom: 1.5rem;
+   }
 
-  }
-
-
+   .banner .button {
+   text-align: center;
+   justify-content: center;
+   font-size: 1.2rem;
+   font-weight: 700;
+   background-color: #55bcc9;
+   padding: 0.5rem;
+   max-width: 100%;
+   border-radius: 0.2rem;
+   }
+}
 
 /* information section */
 
 .information {
   display: flex;
 }
-
 
 .main {
   display: flex;
@@ -324,19 +323,72 @@ border-radius: 0.1rem;
   padding-right: 1rem;
 }
 
-@media only screen and (max-width: 450px) {
-
-
+.mobile {
+  display: none;
 }
 
+@media only screen and (max-width: 448px) {
 
+  .main {
+  display: none;
+  }
 
+  .secondary {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 1rem;
+  }
 
+  .orientation, .campus, .lecture {
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+  background-color: #ffffff;
+  max-width: 100%;
+  padding: 1rem 0;
+  }
+
+  img.desktop {
+  display: none;
+  }
+
+  img.mobile {
+  display: flex;
+  max-width: 100%;
+  }
+
+  .info-text {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .information h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .info-text p {
+  display: flex;
+  max-width: 90%;
+  padding-bottom: 1rem;
+   }
+
+  .info-text span {
+  font-weight: 700;
+  padding: 0.2rem 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0.1rem;
+  }
+}
 
 /* start learning */
 
 .learning {
-  background-color: #c2cad0;
+background-color: #c2cad0;
 }
 
 .learning h2 {
@@ -345,6 +397,8 @@ border-radius: 0.1rem;
   text-align: center;
   transition: all 0.1s linear;
 }
+
+
 
 .learning h2:hover {
  color: #55bcc9;
@@ -400,6 +454,39 @@ max-width: 100%;
   padding-top: 0.5rem;
 }
 
+.mobile-courses h3 {
+  display: none;
+}
+
+@media only screen and (max-width: 448px) {
+
+
+.courses {
+  display: none;
+}
+
+.learning {
+  background-color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+.learning h2 {
+  padding-bottom: 1rem;
+}
+
+.mobile-courses h3 {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  background-color: #c2cad0;
+  text-align: left;
+  padding: 1rem 1rem 1.5rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+  }
 
 
 
@@ -485,9 +572,37 @@ background-color: #55bcc9;
   padding-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 450px) {
 
+
+@media only screen and (max-width: 448px) {
+
+  .thesis h2 {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+
+  .exhibit-container {
+      display: flex;
+      padding: 0;
+    }
+
+  .exhibita {
+    max-width: 100%;
+    justify-content: center;
+    }
+
+  .exhibita video {
+    width: 100%;
   }
+
+  .exhibita h3, p {
+    display: none;
+  }
+  .exhibitb {
+    display: none;
+  }
+
+}
 
 /* footer */
 
@@ -501,6 +616,10 @@ footer {
   height: 2rem;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 448px) {
+
+  footer {
+  padding-top: 2.5rem;
+}
 
   }
